@@ -75,4 +75,5 @@ end
 
 def sell_pet_to_customer(pet_shop, pet, customer)
   customer[:pets].push(pet)
+  pet_shop[:admin][:pets_sold] += 1
 end
