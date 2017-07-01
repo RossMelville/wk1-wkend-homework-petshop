@@ -73,3 +73,6 @@ def customer_can_afford_pet(customer, new_pet)
   return false
 end
 
+def sell_pet_to_customer(pet_shop, pet, customer)
+  customer[:pets].push(pet)
+end
