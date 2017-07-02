@@ -20,7 +20,7 @@ end
 
 def stock_count(pet_shop)
   num_of_pets = 0
-  for pet in pet_shop[:pets] do 
+  for pet in pet_shop[:pets] 
     num_of_pets += 1
   end
   return num_of_pets
@@ -77,12 +77,9 @@ end
 
 def sell_pet_to_customer(pet_shop, pet, customer)
   
-  # found_pet = find_pet_by_name(pet_shop, pet[:name])
-
   if pet == nil
     return
   end
-    # afford_pet = customer_can_afford_pet(customer, pet)
 
   if customer_can_afford_pet(customer, pet) == true
     add_pet_to_customer(customer, pet)
