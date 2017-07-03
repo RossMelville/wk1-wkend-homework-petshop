@@ -67,9 +67,7 @@ def add_pet_to_customer(customer, pet)
 end
 
 def customer_can_afford_pet(customer, pet)
-  available_cash = customer[:cash]
-  pet_cost = pet[:price]
-  if available_cash >= pet_cost 
+  if customer[:cash] >= pet[:price]
     return true
   end
   return false
